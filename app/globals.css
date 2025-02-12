@@ -9,6 +9,7 @@
     width: 0px;
     height: 0px;
     border-radius: 0px;
+    display: none;
   }
 
   .remove-scrollbar::-webkit-scrollbar-track {
@@ -23,6 +24,11 @@
   .remove-scrollbar::-webkit-scrollbar-thumb:hover {
     /* background: #1e2238; */
     background: transparent;
+  }
+
+  .remove-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
